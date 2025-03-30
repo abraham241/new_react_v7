@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import Manav from "~/components/manav";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +9,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div>
+      <Manav />
+      <p>hello tous</p>
+    </div>
+  );
 }
